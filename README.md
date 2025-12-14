@@ -6,12 +6,20 @@ An interactive command-line tool written in Go that generates deployment configu
 
 ### Download Pre-built Binary
 
-Download the latest release for your platform:
+Download the latest binary for your platform from the [releases page](https://github.com/the-trybe/forge-deploy-cli/releases/latest):
 
 **Linux (amd64):**
 
 ```bash
-curl -L https://github.com/the-trybe/forge-deploy-cli/releases/latest/download/forge-deploy-linux-amd64 -o forge-deploy
+curl -L https://github.com/the-trybe/forge-deploy-cli/releases/download/latest/forge-deploy-linux-amd64 -o forge-deploy
+chmod +x forge-deploy
+sudo mv forge-deploy /usr/local/bin/
+```
+
+**Linux (ARM64):**
+
+```bash
+curl -L https://github.com/the-trybe/forge-deploy-cli/releases/download/latest/forge-deploy-linux-arm64 -o forge-deploy
 chmod +x forge-deploy
 sudo mv forge-deploy /usr/local/bin/
 ```
@@ -19,7 +27,7 @@ sudo mv forge-deploy /usr/local/bin/
 **macOS (Intel):**
 
 ```bash
-curl -L https://github.com/the-trybe/forge-deploy-cli/releases/latest/download/forge-deploy-darwin-amd64 -o forge-deploy
+curl -L https://github.com/the-trybe/forge-deploy-cli/releases/download/latest/forge-deploy-darwin-amd64 -o forge-deploy
 chmod +x forge-deploy
 sudo mv forge-deploy /usr/local/bin/
 ```
@@ -27,7 +35,7 @@ sudo mv forge-deploy /usr/local/bin/
 **macOS (Apple Silicon):**
 
 ```bash
-curl -L https://github.com/the-trybe/forge-deploy-cli/releases/latest/download/forge-deploy-darwin-arm64 -o forge-deploy
+curl -L https://github.com/the-trybe/forge-deploy-cli/releases/download/latest/forge-deploy-darwin-arm64 -o forge-deploy
 chmod +x forge-deploy
 sudo mv forge-deploy /usr/local/bin/
 ```
@@ -67,7 +75,7 @@ Options:
 
 ## Generated Files
 
-The tool generates 4 files:
+The tool generates 2 files:
 
 1. **forge-deploy.yml** - Declarative Forge configuration
 2. **.github/workflows/deploy.yml** - GitHub Actions workflow
