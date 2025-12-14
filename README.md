@@ -41,7 +41,7 @@ sudo mv forge-deploy /usr/local/bin/
 ```
 
 **Windows:**
-I don't care, build from source (if it works).
+We don't care, build from source (if it works).
 
 ### Build from Source
 
